@@ -75,12 +75,73 @@
 	.downdown:after {
 		content: ' '; 
 		height: 0; 
+		width: 0;
 		position: absolute; 
-		width: 0; 
-		border: 10px solid transparent;
-		border-bottom-color: #fff;
+		border: 16px solid transparent;
+		border-color: #333 transparent transparent transparent;
+		top: -32px;
+		left: -16px;
 	}
-	
+	.upup {
+		height: 0px;
+	    width: 0px;
+	    border-width: 16px;
+	    border-style: solid;
+	    border-color:  transparent transparent #333 transparent;
+	    position: absolute;
+	    top: 0px;
+	    left: 190px;
+	}
+	.upup:after {
+		content: ' '; 
+		height: 0; 
+		width: 0;
+		position: absolute; 
+		border: 16px solid transparent;
+		border-color:  transparent transparent #333 transparent;
+		top: -32px;
+		left: -16px;
+	}
+	.leftleft {
+		height: 0px;
+	    width: 0px;
+	    border-width: 16px;
+	    border-style: solid;
+	    border-color:  transparent #333 transparent transparent;
+	    position: absolute;
+	    top: 0px;
+	    left: 230px;
+	}
+	.leftleft:after {
+		content: ' '; 
+		height: 0; 
+		width: 0;
+		position: absolute; 
+		border: 16px solid transparent;
+		border-color:  transparent #333 transparent transparent ;
+		top: -16px;
+		left: -32px;
+	}
+	.rightright {
+		height: 0px;
+	    width: 0px;
+	    border-width: 16px;
+	    border-style: solid;
+	    border-color:  transparent  transparent transparent #333;
+	    position: absolute;
+	    top: 0px;
+	    left: 290px;
+	}
+	.rightright:after {
+		content: ' '; 
+		height: 0; 
+		width: 0;
+		position: absolute; 
+		border: 16px solid transparent;
+		border-color:  transparent  transparent transparent #333;
+		top: -16px;
+		left: -32px;
+	}
 	</style>
 	</head>
 	<body>
@@ -88,5 +149,8 @@
 		<div class="up"></div>
 		<div class="left"></div>
 		<div class="downdown"></div>
+		<div class="upup"></div>
+		<div class="leftleft"></div>
+		<div class="rightright"></div>
 	</body>
 </html>
