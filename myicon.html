@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 	<style type="text/css">
 	.down {
 	    height: 0px;
@@ -131,6 +132,10 @@
 	    position: absolute;
 	    top: 0px;
 	    left: 290px;
+		
+	}
+	.rightright:hover {
+		-webkit-animation: 1s rightright linear infinite ;
 	}
 	.rightright:after {
 		content: ' '; 
@@ -142,6 +147,108 @@
 		top: -16px;
 		left: -32px;
 	}
+	@-webkit-keyframes rightright{
+		from{left: 290px;}
+		to{left: 300px;}
+	}
+	.gohome {
+		height: 0px;
+	    width: 0px;
+	    border-width: 16px;
+	    border-style: solid;
+	    border-color:  transparent  transparent  #333 transparent;
+	    position: absolute;
+	    top: -16px;
+	    left: 330px;
+	}
+	.gohome:after {
+		content: ' '; 
+		height: 12px; 
+		width: 16px;
+		position: absolute; 	
+		background-color: black;	
+		top: 16px;
+		left: -8px;
+	}
+	.gohome:hover {
+		-webkit-animation: 0.25s gohome linear ;
+	}
+	@-webkit-keyframes gohome{
+		from{opacity: 1;}
+		to{opacity: 0.5;}
+	}
+	.plus {
+	    position: absolute;
+	    top: 5px;
+	    left: 375px;
+	    transform-origin: 10px 10px;
+	}
+	.plus:after {
+		content: ' ';
+		height: 25px;
+		width: 5px;
+		position: absolute; 
+		border-radius: 5px;
+		background-color: black;
+	}
+	.plus:before {
+		content: ' ';
+		height: 25px;
+		width: 5px;
+		position: absolute; 
+
+		border-radius: 5px;
+		background-color: black;
+		transform: rotateZ(90deg);
+	}
+	.plus:hover{
+		animation: 5s plus linear infinite;
+	}
+	@-webkit-keyframes plus{
+		from{transform: rotateZ(0deg);}
+		to{transform: rotateZ(360deg);}
+	}
+	.heart {
+	    position: absolute;
+	    width: 100px;
+	    height: 90px;
+	    left: 390px;
+	}
+	.heart:before,
+	.heart:after {
+	    position: absolute;
+	    content: "";
+	    left: 50px;
+	    top: 0;
+	    width: 50px;
+	    height: 80px;
+	    background: red;
+	    -moz-border-radius: 50px 50px 0 0;
+	    border-radius: 50px 50px 0 0;
+	    -webkit-transform: rotate(-45deg);
+	       -moz-transform: rotate(-45deg);
+	        -ms-transform: rotate(-45deg);
+	         -o-transform: rotate(-45deg);
+	            transform: rotate(-45deg);
+	    -webkit-transform-origin: 0 100%;
+	       -moz-transform-origin: 0 100%;
+	        -ms-transform-origin: 0 100%;
+	         -o-transform-origin: 0 100%;
+	            transform-origin: 0 100%;
+	}
+	.heart:after {
+	    left: 0;
+	    -webkit-transform: rotate(45deg);
+	       -moz-transform: rotate(45deg);
+	        -ms-transform: rotate(45deg);
+	         -o-transform: rotate(45deg);
+	            transform: rotate(45deg);
+	    -webkit-transform-origin: 100% 100%;
+	       -moz-transform-origin: 100% 100%;
+	        -ms-transform-origin: 100% 100%;
+	         -o-transform-origin: 100% 100%;
+	            transform-origin :100% 100%;
+	}
 	</style>
 	</head>
 	<body>
@@ -152,5 +259,8 @@
 		<div class="upup"></div>
 		<div class="leftleft"></div>
 		<div class="rightright"></div>
+		<div class="gohome"></div>
+		<div class="plus"></div>
+		<div class="heart"></div>
 	</body>
 </html>
